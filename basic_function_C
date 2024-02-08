@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void myfunc();
+
+int main()
+{
+    myfunc();
+    myfunc();
+    myfunc();
+
+    return 0;
+}
+
+void myfunc()
+{
+    static int count=0;
+    
+    count=count+1;
+    printf("The count is %d \n",count);
+    
+}
+// o/p: The count is 1.
+        The count is 2.
+        The count is 3.

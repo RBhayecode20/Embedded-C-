@@ -1,1 +1,28 @@
- 
+In main.c:
+#include <stdio.h>
+void change_system_clock(int sys_clock);
+void file_myfunc();
+
+int main()
+{
+    change_system_clock(3);
+    file_myfunc();
+    return 0;
+
+}
+
+void change_system_clock(int sys_clock)
+{
+    printf("system clock is changed to %d \n",sys_clock);
+}
+
+
+In file.c:
+extern void change_system_clock(int sys_clock);
+
+void file_myfunc()
+{
+    
+    change_system_clock(2);
+    
+}

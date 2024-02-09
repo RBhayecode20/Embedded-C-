@@ -6,6 +6,13 @@ float div(float a,float b)
     return c;
 }
 
+// In case of type casting
+/* float div(int a,int b)
+{
+    float c=(float)a/(float)b;
+    return c;
+} */
+
 int sum(int a,int b)
 {
     int c;

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-float pi()
+float div(float a,float b)
 {
-    
-    return 3.142;
+    float c=a/b;
+    return c;
 }
 
 int sum(int a,int b)
@@ -16,12 +16,13 @@ int sum(int a,int b)
 int main()
 {
     int x=10,y=20,z;
-    printf("The value of pi is %f \n",pi());
+    float d=div(22,7);
+    printf("The value of pi is %f \n",d);
     z=sum(x,y);
     printf("the sum of %d and %d is %d",x,y,z);
  
     return 0;
 }
 
-//O/p: The value of pi is 3.142000 
+//O/p: The value of pi is 3.142857
 //     the sum of 10 and 20 is 30
